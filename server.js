@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors')
 const app = express();
-const port = 8000; // You can change this port if needed
+const port = process.env.PORT || 8000;; // You can change this port if needed
 
 app.use(cors());
 // Connect to MongoDB
